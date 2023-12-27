@@ -1,0 +1,21 @@
+{
+  "json": {
+    "encode": "pub fn encode()",
+    "codec": {
+      "handle": {
+        "codec": "pub fn()",
+        "side": "fn()"
+      }
+    },
+    "json_decode": {
+    },
+    "json_encode": {
+      "inner_mod": {
+        "encode": "pub fn encode()"
+      },
+      "encode": "pub fn encode()"
+    }
+  },
+  "xml": {
+  }
+}
