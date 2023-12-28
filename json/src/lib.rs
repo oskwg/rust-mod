@@ -1,5 +1,6 @@
 // 将codec方法引入到当前mod下，同时公开对外部公开
-pub use crate::codec::handle::codec;
+// as 可以为为进入的方法定义一个别名
+pub use crate::codec::handle::codec as ff;
 
 // 声明mod，模块只有使用mod关键字声明后才可以使用。通常在lib.rs/mod.rs/main.rs中文件中进行声明
 mod json_encode;
@@ -15,7 +16,6 @@ mod codec;
 
 pub fn encode(s: &str) -> String {
     json_encode::encode(&String::from(s))
-
     // codec(&String::from(s))
 }
 
